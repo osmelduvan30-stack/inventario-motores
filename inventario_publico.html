@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block contenido %}
+
+<form method="GET" action="/">
+    <input type="text" name="buscar" placeholder="Buscar código o potencia">
+    <button type="submit">Buscar</button>
+</form>
+
+<table border="1">
+    <tr>
+        <th>Código</th>
+        <th>Marca</th>
+        <th>Potencia</th>
+        <th>Frame</th>
+        <th>Ubicación</th>
+        <th>Estado</th>
+    </tr>
+
+    {% for m in motores %}
+    <tr>
+        <td>{{ m[1] }}</td>
+        <td>{{ m[2] }}</td>
+        <td>{{ m[3] }}</td>
+        <td>{{ m[4] }}</td>
+        <td>{{ m[5] }}</td>
+        <td>{{ m[6] }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<br>
+<a href="/admin_login">Acceso administrador</a>
+
+{% endblock %}

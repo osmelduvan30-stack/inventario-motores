@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Motor</title>
+</head>
+<body>
+
+<h1>Registrar Motor</h1>
+
+<form method="POST" action="/registrar">
+    <label>Código:</label><br>
+    <input type="text" name="codigo" required><br><br>
+
+    <label>Marca:</label><br>
+    <input type="text" name="marca" required><br><br>
+
+    <label>Potencia:</label><br>
+    <input type="text" name="potencia" required><br><br>
+
+    <label>Frame:</label><br>
+    <input type="text" name="frame" required><br><br>
+
+    <label>Ubicación:</label><br>
+    <input type="text" name="ubicacion" required><br><br>
+
+    <label>Estado:</label><br>
+    <select name="estado" required>
+        <option>Disponible</option>
+        <option>Prestado</option>
+        <option>Reparación</option>
+        <option>Baja</option>
+    </select><br><br>
+
+    <label>Observaciones:</label><br>
+    <textarea name="observaciones"></textarea><br><br>
+
+    <button type="submit">Registrar</button>
+</form>
+
+<br>
+<a href="/">Volver</a>
+
+</body>
+</html>
+
+
