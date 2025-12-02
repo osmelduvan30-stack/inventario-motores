@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block contenido %}
+
+<table border="1">
+    <tr><th>Código</th><td>{{ motor[1] }}</td></tr>
+    <tr><th>Marca</th><td>{{ motor[2] }}</td></tr>
+    <tr><th>Potencia</th><td>{{ motor[3] }}</td></tr>
+    <tr><th>Frame</th><td>{{ motor[4] }}</td></tr>
+    <tr><th>Ubicación</th><td>{{ motor[5] }}</td></tr>
+    <tr><th>Estado</th><td>{{ motor[6] }}</td></tr>
+    <tr><th>Fecha</th><td>{{ motor[7] }}</td></tr>
+    <tr><th>Observaciones</th><td>{{ motor[8] }}</td></tr>
+</table>
+
+{% endblock %}
